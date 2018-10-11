@@ -1,0 +1,304 @@
+/* Style for the Terminals */
+$terminal-width: 650px;
+$terminal-height: 400px;
+$terminal-bradius: 6px 6px 0 0;
+
+body {
+	padding: 10px;
+	background-image: url('https://images2.alphacoders.com/698/698137.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#linux-terminal, #windows-cmd, #mac-terminal {
+	width: $terminal-width;
+	height: $terminal-height;
+	border-radius: $terminal-bradius;
+	box-shadow: 1px 1px 8px #4D4D50;
+}
+/* Linux */ 
+$prompt: #ff1919;
+$top-bar: #D7D7D7;
+$shell: #0f0f0f;
+$path: #5D8DBC;
+
+ul {
+	list-style: none;
+	padding: 0;
+	li {
+		list-style-type: none;
+		display: inline;
+		margin-right: 8px; 
+	}
+}
+
+#linux-terminal {
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	border-radius-bottom: 0;
+	
+	.top-bar {
+		font-family: cantarell, sans-serif;
+		font-size: 15px;
+		background-color: $top-bar;
+		padding: 1px;
+		
+		.title-bar {
+			overflow: hidden;
+			height: 32px;
+			position: relative;
+			
+			.title{
+				text-align: center;
+				margin-top: 7px;
+			}
+		
+			.top-btn {
+				text-align: center;
+				width: 19.3%;
+				margin-top: 7px;
+				position: absolute;
+				top: 0;
+				right: -30px;
+			}
+		}
+		
+		.menu-bar {
+			padding: 0 2px;
+			margin: 3px;
+		}
+	}
+	
+	.shell {
+		background-color: $shell;
+		padding: 1px;
+		height:100%;
+		color: white;
+		position: relative;
+		
+		.command-line {
+			font-family: monospace, sans-serif;
+			font-size: 13px;
+			margin: 0 1px;
+			.prompt {
+				color: $prompt;
+			}
+			.path {
+				color: $path;
+			}
+		}
+		.scroll-bar {
+			background-color: #e8e5e5;
+			position:absolute;
+			top: 0;
+			right: 0;
+			width: 16px;
+			height: 100%;
+			.up-arrow, .down-arrow, .bar{
+				position: absolute;
+				width: 100%;
+				text-align: center;
+				color: grey;
+				
+			}
+			.up-arrow {
+				top: -3px;
+			}
+			.bar {
+				background-color: grey;
+				height: 76%;
+				top: 16px;
+			}
+			.down-arrow {
+				bottom: 60px;
+			}
+			
+		}
+	}
+	
+}
+
+/* Mac OS */ 
+$top-bar: #D7D7D7;
+$shell: #0f0f0f;
+
+#mac-terminal {
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	
+	.top-bar {
+		font-family: cantarell, sans-serif;
+		font-size: 15px;
+		background-color: $top-bar;
+		padding: 1px;
+		
+		.title-bar {
+			overflow: hidden;
+			height: 27px;
+			position: relative;
+			
+			.title{
+				text-align: center;
+				margin-top: 5px;
+			}
+		
+			.top-btn {
+				text-align: center;
+				width: 19.3%;
+				margin-top: 5px;
+				position: absolute;
+				top: 0;
+				left: -18px;
+				.red {
+					color: #FC4F53;
+				}
+				.yellow { 
+					color: #EAC921;
+				}
+				.green {
+					color: #3FB856;
+				}
+			}
+			
+			.fa-expand {
+				color: #8c8c8c;
+				position: absolute;
+				margin-top: 5px;
+				position: absolute;
+				top: 0;
+				right: 3px;
+				transform: rotate(-13deg);
+			}
+		}
+	}
+	
+	.shell {
+		background-color: $shell;
+		padding: 4px;
+		height:100%;
+		color: white;
+		position: relative;
+		
+		.command-line {
+			font-family: monospace, sans-serif;
+			font-size: 13px;
+			margin: 0 1px;
+			.prompt {
+				color: $prompt;
+			}
+			.path {
+				color: $path;
+			}
+		}
+	}
+}
+
+/* Windows */
+$top-bar: #69C1F0;
+$shell: #0f0f0f;
+
+#windows-cmd {
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	border-radius: 0;
+	
+	.top-bar {
+		font-family: cantarell, sans-serif;
+		font-size: 15px;
+		background-color: $top-bar;
+		padding: 1px;
+		
+		.title-bar {
+			height: 27px;
+			position: relative;
+			
+			.title{
+				text-align: center;
+				margin-top: 5px;
+			}
+		
+			.top-btn {
+				text-align: center;
+				width: 20.3%;
+				margin-top: 5px;
+				position: absolute;
+				top: -14px;
+				right: -8px;
+
+				.red {
+					color: white;
+					background-color: #e52222;
+					padding: 2px 22px;
+				}
+				li {
+					margin: 0;
+					padding: 0 9px;
+					font-size: 11px;
+				}
+				
+			}
+			
+			.fa-expand {
+				color: #8c8c8c;
+				position: absolute;
+				margin-top: 5px;
+				position: absolute;
+				top: 0;
+				right: 3px;
+				transform: rotate(-13deg);
+			}
+		}
+	}
+	
+	.shell {
+		background-color: $shell;
+		padding: 4px;
+		height:100%;
+		color: white;
+		position: relative;
+		
+		.command-line {
+			font-family: 'Lucida Console', sans-serif;
+			font-size: 13px;
+			margin: 0 1px;
+			.prompt {
+				color: $prompt;
+			}
+			.path {
+				color: $path;
+			}
+		}
+		.scroll-bar {
+			background-color: #e8e5e5;
+			position:absolute;
+			top: 0;
+			right: 0;
+			width: 16px;
+			height: 100%;
+			.up-arrow, .down-arrow, .bar{
+				position: absolute;
+				width: 100%;
+				text-align: center;
+				color: #1e1e1e;
+				
+			}
+			.up-arrow {
+				top: -6px;
+			}
+			.bar {
+				background-color: #C9CBCC;
+				height: 83.6%;
+				top: 16px;
+			}
+			.down-arrow {
+				bottom: 32px;
+			}			
+		}
+	}
+}
+
+

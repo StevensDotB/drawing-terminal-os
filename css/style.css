@@ -1,0 +1,261 @@
+/* Style for the Terminals */
+body {
+  padding: 10px;
+  background-image: url("https://images2.alphacoders.com/698/698137.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#linux-terminal, #windows-cmd, #mac-terminal {
+  width: 650px;
+  height: 400px;
+  border-radius: 6px 6px 0 0;
+  box-shadow: 1px 1px 8px #4D4D50;
+}
+
+/* Linux */
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 8px;
+}
+
+#linux-terminal {
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border-radius-bottom: 0;
+}
+#linux-terminal .top-bar {
+  font-family: cantarell, sans-serif;
+  font-size: 15px;
+  background-color: #D7D7D7;
+  padding: 1px;
+}
+#linux-terminal .top-bar .title-bar {
+  overflow: hidden;
+  height: 32px;
+  position: relative;
+}
+#linux-terminal .top-bar .title-bar .title {
+  text-align: center;
+  margin-top: 7px;
+}
+#linux-terminal .top-bar .title-bar .top-btn {
+  text-align: center;
+  width: 19.3%;
+  margin-top: 7px;
+  position: absolute;
+  top: 0;
+  right: -30px;
+}
+#linux-terminal .top-bar .menu-bar {
+  padding: 0 2px;
+  margin: 3px;
+}
+#linux-terminal .shell {
+  background-color: #0f0f0f;
+  padding: 1px;
+  height: 100%;
+  color: white;
+  position: relative;
+}
+#linux-terminal .shell .command-line {
+  font-family: monospace, sans-serif;
+  font-size: 13px;
+  margin: 0 1px;
+}
+#linux-terminal .shell .command-line .prompt {
+  color: #ff1919;
+}
+#linux-terminal .shell .command-line .path {
+  color: #5D8DBC;
+}
+#linux-terminal .shell .scroll-bar {
+  background-color: #e8e5e5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 100%;
+}
+#linux-terminal .shell .scroll-bar .up-arrow, #linux-terminal .shell .scroll-bar .down-arrow, #linux-terminal .shell .scroll-bar .bar {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: grey;
+}
+#linux-terminal .shell .scroll-bar .up-arrow {
+  top: -3px;
+}
+#linux-terminal .shell .scroll-bar .bar {
+  background-color: grey;
+  height: 76%;
+  top: 16px;
+}
+#linux-terminal .shell .scroll-bar .down-arrow {
+  bottom: 60px;
+}
+
+/* Mac OS */
+#mac-terminal {
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+#mac-terminal .top-bar {
+  font-family: cantarell, sans-serif;
+  font-size: 15px;
+  background-color: #D7D7D7;
+  padding: 1px;
+}
+#mac-terminal .top-bar .title-bar {
+  overflow: hidden;
+  height: 27px;
+  position: relative;
+}
+#mac-terminal .top-bar .title-bar .title {
+  text-align: center;
+  margin-top: 5px;
+}
+#mac-terminal .top-bar .title-bar .top-btn {
+  text-align: center;
+  width: 19.3%;
+  margin-top: 5px;
+  position: absolute;
+  top: 0;
+  left: -18px;
+}
+#mac-terminal .top-bar .title-bar .top-btn .red {
+  color: #FC4F53;
+}
+#mac-terminal .top-bar .title-bar .top-btn .yellow {
+  color: #EAC921;
+}
+#mac-terminal .top-bar .title-bar .top-btn .green {
+  color: #3FB856;
+}
+#mac-terminal .top-bar .title-bar .fa-expand {
+  color: #8c8c8c;
+  position: absolute;
+  margin-top: 5px;
+  position: absolute;
+  top: 0;
+  right: 3px;
+  transform: rotate(-13deg);
+}
+#mac-terminal .shell {
+  background-color: #0f0f0f;
+  padding: 4px;
+  height: 100%;
+  color: white;
+  position: relative;
+}
+#mac-terminal .shell .command-line {
+  font-family: monospace, sans-serif;
+  font-size: 13px;
+  margin: 0 1px;
+}
+#mac-terminal .shell .command-line .prompt {
+  color: #ff1919;
+}
+#mac-terminal .shell .command-line .path {
+  color: #5D8DBC;
+}
+
+/* Windows */
+#windows-cmd {
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 0;
+}
+#windows-cmd .top-bar {
+  font-family: cantarell, sans-serif;
+  font-size: 15px;
+  background-color: #69C1F0;
+  padding: 1px;
+}
+#windows-cmd .top-bar .title-bar {
+  height: 27px;
+  position: relative;
+}
+#windows-cmd .top-bar .title-bar .title {
+  text-align: center;
+  margin-top: 5px;
+}
+#windows-cmd .top-bar .title-bar .top-btn {
+  text-align: center;
+  width: 20.3%;
+  margin-top: 5px;
+  position: absolute;
+  top: -14px;
+  right: -8px;
+}
+#windows-cmd .top-bar .title-bar .top-btn .red {
+  color: white;
+  background-color: #e52222;
+  padding: 2px 22px;
+}
+#windows-cmd .top-bar .title-bar .top-btn li {
+  margin: 0;
+  padding: 0 9px;
+  font-size: 11px;
+}
+#windows-cmd .top-bar .title-bar .fa-expand {
+  color: #8c8c8c;
+  position: absolute;
+  margin-top: 5px;
+  position: absolute;
+  top: 0;
+  right: 3px;
+  transform: rotate(-13deg);
+}
+#windows-cmd .shell {
+  background-color: #0f0f0f;
+  padding: 4px;
+  height: 100%;
+  color: white;
+  position: relative;
+}
+#windows-cmd .shell .command-line {
+  font-family: 'Lucida Console', sans-serif;
+  font-size: 13px;
+  margin: 0 1px;
+}
+#windows-cmd .shell .command-line .prompt {
+  color: #ff1919;
+}
+#windows-cmd .shell .command-line .path {
+  color: #5D8DBC;
+}
+#windows-cmd .shell .scroll-bar {
+  background-color: #e8e5e5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 100%;
+}
+#windows-cmd .shell .scroll-bar .up-arrow, #windows-cmd .shell .scroll-bar .down-arrow, #windows-cmd .shell .scroll-bar .bar {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #1e1e1e;
+}
+#windows-cmd .shell .scroll-bar .up-arrow {
+  top: -6px;
+}
+#windows-cmd .shell .scroll-bar .bar {
+  background-color: #C9CBCC;
+  height: 83.6%;
+  top: 16px;
+}
+#windows-cmd .shell .scroll-bar .down-arrow {
+  bottom: 32px;
+}
